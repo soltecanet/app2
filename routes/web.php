@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Livewire\Proveedores\CreateSupplider;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,4 +25,11 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+
+    Route::get('/crear_proveerdor', CreateSupplider::class)->name('supplier.create');
+
+
+
+
 });

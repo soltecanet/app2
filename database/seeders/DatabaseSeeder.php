@@ -25,9 +25,15 @@ class DatabaseSeeder extends Seeder
 
         // Para instalara por primera vez.
         // seder de roles, permiso y usuarios principla
+    /*
         $this->call([
             RoleSeeder::class,
             UserSeeder::class
+        ]);
+    */
+
+        $this->call([
+            RegionSeeder::class
         ]);
 
     }
