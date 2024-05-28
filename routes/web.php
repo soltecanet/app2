@@ -1,7 +1,9 @@
 <?php
-
+use App\Http\Livewire\Proveedores\ListSupplier;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Proveedores\CreateSupplider;
+use App\Http\Livewire\Proveedores\EditSupplider;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,8 +30,8 @@ Route::middleware([
 
 
     Route::get('/crear_proveerdor', CreateSupplider::class)->name('supplier.create');
-
-
-
+    Route::get('/proveedores', ListSupplier::class)->name('supplier.index');
+    Route::get('/editar_proveerdor/{id}', EditSupplider::class)->name('supplier.edit');
+ 
 
 });

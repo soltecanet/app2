@@ -20,7 +20,7 @@ return new class extends Migration
             $table->foreignId('region_id')->constrained();
             $table->foreignId('commune_id')->constrained();
             $table->timestamps();
-        });
+        }); 
     }
 
     /**
